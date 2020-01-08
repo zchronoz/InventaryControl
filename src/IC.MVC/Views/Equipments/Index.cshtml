@@ -1,0 +1,70 @@
+﻿@model IEnumerable<IC.MVC.ViewModels.EquipmentViewModel>
+
+@{
+    ViewBag.Title = "Lista";
+}
+
+<h2>Listagem dos Produtos</h2>
+
+<p>
+    @Html.ActionLink("Novo Produto", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TypeEquipment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModelEquipment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateAcquisition)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ValueAcquisition)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PathImage)
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.DateRegister)
+            </th>*@
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TypeEquipment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModelEquipment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateAcquisition)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ValueAcquisition)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Code)
+        </td>
+        <td>
+            @Html.CheckBox("Imagem", !string.IsNullOrEmpty(item.PathImage), new { disabled = "disabled" })
+        </td>
+        @*<td>
+                @Html.DisplayFor(modelItem => item.DateRegister)
+            </td>*@
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.EquipmentId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.EquipmentId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.EquipmentId })
+        </td>
+    </tr>
+    }
+</table>

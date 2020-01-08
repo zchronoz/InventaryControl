@@ -1,0 +1,11 @@
+packages/*
+src/IC.API/bin/*
+src/IC.Domain/bin/*
+src/IC.Application/bin/*
+src/IC.CrossCutting/bin/*
+src/IC.Data/bin/*
+src/IC.API/obj/*
+src/IC.Domain/obj/*
+src/IC.Application/obj/*
+src/IC.CrossCutting/obj/*
+src/IC.Data/obj/*

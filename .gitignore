@@ -1,0 +1,26 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/packages
+/src/IC.API/bin
+/src/IC.API/obj/Debug
+/src/IC.Application/bin/Debug
+/src/IC.CrossCutting/bin/Debug
+/src/IC.CrossCutting/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/src/IC.CrossCutting/obj/Debug/IC.CrossCutting.dll
+/src/IC.CrossCutting/obj/Debug/IC.CrossCutting.pdb
+/src/IC.Data/bin/Debug
+/src/IC.Domain/bin/Debug
+/src/IC.Domain/obj/Debug
+/src/IC.MVC/bin
+/src/IC.MVC/obj/Debug
+/src/IC.Data/obj/Debug/IC.Data.csproj.CopyComplete
+/src/IC.Data/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/src/IC.Data/obj/Debug/IC.Data.csproj.FileListAbsolute.txt
+/src/IC.Data/obj/Debug/IC.Data.dll
+/src/IC.Data/obj/Debug/IC.Data.pdb
+/src/IC.Application/obj/Debug/IC.Application.dll
+/src/IC.Application/obj/Debug/IC.Application.pdb
+/src/IC.Application/obj/Debug/IC.Application.csproj.FileListAbsolute.txt
+/src/IC.Application/obj/Debug/IC.Application.csproj.CopyComplete
